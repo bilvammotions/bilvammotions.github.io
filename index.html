@@ -103,14 +103,21 @@
             <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
               <div class="icon"><i class="bi bi-pencil-square"></i></div>
               <h4 class="title"><a href=""> Logo designs</a></h4>
+             
             </div>
 
-            <div class="icon-box" data-aos="fade-up" data-aos-delay="200"></div>
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+              <div class="icon"><i class="bi bi-credit-card-2-front"></i></div>
+              <h4 class="title"><a href=""> Business Cards and Stationery</a></h4>
+              
+            </div>
+
             <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
               <div class="icon"><i class="bi bi-file-earmark-spreadsheet"></i></div>
               <h4 class="title"><a href="">	Package design</a></h4>
+              
             </div>
-    
+           
           </div>
           <div class="col-lg-6 background order-lg-2" data-aos="zoom-in">
             <img src="assets/img/about-img.svg" class="img-fluid" alt="">
@@ -121,6 +128,7 @@
             <a href="about-us.html" class="morebtn">More</a>
           </div>
         </div>
+
       </div>
     </section><!-- End About Section -->
 
@@ -148,7 +156,7 @@
           <div class="col-md-6 col-lg-5" data-aos="zoom-in" data-aos-delay="200">
             <div class="box">
               <div class="icon">
-                <img src="assets/img/new_img/logos and branding.svg" alt="">
+
               </div>
               <h4 class="title"><a href="">Business Cards & Stationery</a></h4>
               <p class="description">Don’t underestimate the importance of these two pieces when building your corporate identity. A little card says big things.</p>
@@ -641,59 +649,61 @@
           <h3>Our CLients</h3>
           <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque dere santome nida.</p>
         </div>
+        <div class="client-slider">
+         <div class="owl-carousel">
 
-        <div class="row g-0 clients-wrap clearfix" data-aos="zoom-in" data-aos-delay="100">
-
-          <div class="col-lg-3 col-md-4 col-xs-6">
+          <div>
             <div class="client-logo">
               <img src="assets/img/clients/client-1.png" class="img-fluid" alt="">
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-4 col-xs-6">
+          <div>
             <div class="client-logo">
               <img src="assets/img/clients/client-2.png" class="img-fluid" alt="">
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-4 col-xs-6">
+          <div>
             <div class="client-logo">
               <img src="assets/img/clients/client-3.png" class="img-fluid" alt="">
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-4 col-xs-6">
+          <div>
             <div class="client-logo">
               <img src="assets/img/clients/client-4.png" class="img-fluid" alt="">
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-4 col-xs-6">
+          <div>
             <div class="client-logo">
               <img src="assets/img/clients/client-5.png" class="img-fluid" alt="">
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-4 col-xs-6">
+          <div>
             <div class="client-logo">
               <img src="assets/img/clients/client-6.png" class="img-fluid" alt="">
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-4 col-xs-6">
+          <div>
             <div class="client-logo">
               <img src="assets/img/clients/client-7.png" class="img-fluid" alt="">
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-4 col-xs-6">
+          <div>
             <div class="client-logo">
               <img src="assets/img/clients/client-8.png" class="img-fluid" alt="">
             </div>
           </div>
 
+        </div> 
         </div>
 
+        
       </div>
 
     </section><!-- End Clients Section -->
@@ -762,6 +772,15 @@
       <div class="copyright">
         &copy; <strong>Contact now !  for the best Designing Service.</strong>
       </div>
+      <div class="credits">
+        <!--
+        All the links in the footer should remain intact.
+        You can delete the links only if you purchased the pro version.
+        Licensing information: https://bootstrapmade.com/license/
+        Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Bilvam Motions
+      -->
+        <!--Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>-->
+      </div>
     </div>
   </footer><!-- End Footer -->
   
@@ -782,10 +801,20 @@
   <script src="assets/js/owl.carousel.min.js"></script>
   <script>
     $(document).ready(function(){
-      $(".owl-carousel").owlCarousel({
+      $("#why-us .owl-carousel").owlCarousel({
         loop:true,
         autoplay:true,
         autoplayTimeout:3000,
+      });
+    });
+
+    $(document).ready(function(){
+      $(".client-slider .owl-carousel").owlCarousel({
+        loop:true,
+        autoplay:true,
+        autoplayTimeout:1000,
+        items:5,
+        margin:10,
       });
     });
   </script>

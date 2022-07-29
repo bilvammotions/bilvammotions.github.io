@@ -559,14 +559,12 @@ section {
   background: #fff;
   box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
   transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  width:100%;
 }
 #services .box:hover {
   transform: translateY(-5px);
-}
-#services .icon {
-  position: absolute;
-  left: -15px;
-  top: calc(50% - 32px);
 }
 #services .icon i {
   font-size: 64px;
